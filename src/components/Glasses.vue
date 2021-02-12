@@ -1,9 +1,20 @@
 <template>
 
         <div class="nav">
-            <h5 id="cart">
-                Cart
-            </h5>
+            <div class="blue-light">
+                <!-- Blue-light-filtering lenses for any pair -->
+            </div>
+            <div class="nav-right">
+                <span id="nav-command">
+                    Sign In
+                </span>
+                <span id="nav-command">
+                    Locations
+                </span>
+                <span id="nav-command">
+                    Cart ({{ cart.length }})
+                </span>
+            </div>
         </div>
 
         <h1>DORBY BARKER</h1>
@@ -137,18 +148,26 @@ body {
 .nav {
     display: flex;
     flex-direction: row;
-    justify-content: right;
+    justify-content: space-between;
     margin: -.5em -1em 1.5em -1em;
-    /* padding-top: -1em; */
     width: 100vw;
-    height: 5vh;
+    height: 28px;
     background-color: rgb(236, 235, 235);
 }
 
-h5 {
+.blue-light {
+
+}
+
+.nav-right {
+    margin-top: .25em;
+    margin-right: .5em;
+}
+
+#nav-command {
     margin-top: 0;
-    padding: 0;
-    font-weight: lighter;
+    padding: 1em;
+    font-size: .8em;
 }
 
 #img-container {
